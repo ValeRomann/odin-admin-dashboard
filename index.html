@@ -7,24 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
 </head>
 
 <body>
   <div class="container">
     <header class="header">
       <div class="search">
-        <button>Search</button>
+        <button><span class="mdi mdi-magnify"></span></button>
         <input type="search" name="" id="">
       </div>
       <div class="user">
-        <div class="notification"></div>
+        <button class="notification">
+          <span class="mdi mdi-bell-ring-outline"></span>
+        </button>
         <div class="avatar"></div>
-        <div class="username"></div>
+        <div class="username">ValeRoman</div>
       </div>
       <div class="welcome">
-          <div class="avatar"></div>
-          <div class="greeting"></div>
-          <div class="username"></div>
+        <div class="avatar">
+          <img src="avatar.jpg" alt="avatar">
+        </div>
+        <div class="greeting">Hi there,</div>
+        <div class="username">ValeRoman <span class="nickname">@namorelav</span></div>
       </div>
       <div class="buttons">
         <button>New</button>
