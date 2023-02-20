@@ -33,12 +33,12 @@ header.header .notification {
   border: none;
 }
 
-header.header .search button,
-header.header .notification {
-  width: 1.3em;
-  background-color: transparent;
-  font-size: 1.3em;
+button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 1.3em;
+  font-size: 1.3em;
 }
 
 header.header .search input {
@@ -100,8 +100,9 @@ header.header .header-buttons button {
   border-radius: 2em;
   width: 6em;
   padding: 8px;
-  border: none;
   cursor: pointer;
+  background-color: antiquewhite;
+  font-size: 0.9em;
 }
 
 .sidebar {
@@ -129,4 +130,39 @@ nav.sidebar ul {
 
 nav.sidebar ul li {
   list-style-type: none;
+}
+
+main.main-content {
+  background-color: lightcyan;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em;
+  padding: 1em;
+  align-items: start;
+}
+
+main.main-content .projects-container {
+  grid-row: 1 / 3;  
+}
+
+main.main-content .projects-container,
+main.main-content .anounsments-container,
+main.main-content .trendings-container {
+  display: grid;
+  grid-gap: 1em;
+}
+
+main.main-content .projects-container .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5em;
+}
+
+main.main-content .projects-container h2 {
+  grid-row: 1 / 3
+}
+
+main.main-content .trending-user img {
+  width: 2.5em;
+  border-radius: 50%;
 }
