@@ -18,6 +18,7 @@ header.header {
   grid-template-columns: 2fr 1fr;
   grid-gap: 1em;
   padding: 1em 2em;
+  background-color: #fff;
 }
 
 header.header .search {
@@ -92,7 +93,7 @@ header.header .welcome .avatar img {
 
 header.header .header-buttons {
   display: flex;
-  justify-content: space-between; 
+  justify-content: flex-end; 
   align-items: center;
   gap: 1.5em;
 }
@@ -124,6 +125,15 @@ nav.sidebar ul li a {
   color: white;
 }
 
+nav.sidebar ul li a {
+  text-decoration: none;
+}
+
+nav.sidebar ul li a:hover,
+nav.sidebar ul li a:active {
+  text-decoration: underline;
+}
+
 nav.sidebar ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -143,6 +153,7 @@ main.main-content {
   grid-row-gap: 2em;
   padding: 1em;
   align-items: start;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main.main-content .projects-container {
@@ -161,6 +172,7 @@ main.main-content .anounsments,
 main.main-content .trendings {
   background-color: #fff;
   border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main.main-content .projects-container .projects {
@@ -222,4 +234,12 @@ main.main-content .trendings .trending-user {
   display: grid;
   grid-gap: 1.5em;
   grid-template-columns: 2em 1fr;
+}
+
+main.main-content .trendings .trending-user p {
+  font-size: 0.75em;
+}
+
+main.main-content .trendings .trending-user .trending-user-name p:first-child {
+  color: black;
 }
