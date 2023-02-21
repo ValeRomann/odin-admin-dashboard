@@ -137,6 +137,7 @@ main.main-content {
   background-color: lightcyan;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-gap: 2em;
   padding: 1em;
   align-items: start;
