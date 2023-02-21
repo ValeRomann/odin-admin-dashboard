@@ -153,6 +153,13 @@ main.main-content .trendings-container {
   grid-gap: 1em;
 }
 
+main.main-content .projects-container .projects .project,
+main.main-content .anounsments,
+main.main-content .trendings {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
 main.main-content .projects-container .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -160,10 +167,8 @@ main.main-content .projects-container .projects {
 }
 
 main.main-content .projects-container .projects .project {
-  background-color: #fff;
   border-left: 8px solid rgb(219, 197, 71);
   padding: 1.5em;
-  border-radius: 8px;
   display: grid;
   grid-template-rows: 1.5em 1fr 1em;
   gap: 0.5em;
@@ -183,10 +188,8 @@ main.main-content p {
 }
 
 main.main-content .anounsments {
-  background-color: #fff;
   padding: 1em 2em;
   font-size: 0.7em;
-  border-radius: 8px;
 }
 
 main.main-content .anounsments .anounsment {
@@ -204,4 +207,16 @@ main.main-content .anounsments .anounsment:nth-last-child(1) {
 main.main-content .trending-user img {
   width: 2.5em;
   border-radius: 50%;
+}
+
+main.main-content .trendings {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+}
+
+main.main-content .trendings .trending-user {
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: 2em 1fr;
 }
