@@ -179,8 +179,27 @@ main.main-content h2 {
 
 main.main-content p {
   font-size: 0.9em;
+  color: #666;;
 }
 
+main.main-content .anounsments {
+  background-color: #fff;
+  padding: 1em 2em;
+  font-size: 0.7em;
+  border-radius: 8px;
+}
+
+main.main-content .anounsments .anounsment {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid lightgrey;
+  display: grid;
+  grid-gap: 0.2em;
+}
+
+main.main-content .anounsments .anounsment:nth-last-child(1) {
+  border: none;
+}
 
 main.main-content .trending-user img {
   width: 2.5em;
